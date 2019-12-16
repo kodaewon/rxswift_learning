@@ -1,0 +1,6 @@
+module Pods_RxSwift_Learning {
+  umbrella header "Pods-RxSwift-Learning-umbrella.h"
+
+  export *
+  module * { export * }
+}
