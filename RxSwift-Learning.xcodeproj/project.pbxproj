@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		463A4056296F9214C6365BC6 /* libPods-RxSwift-Learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */; };
 		4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E323A760C00068BAF4 /* AppDelegate.swift */; };
-		4C6769E623A760C00068BAF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E523A760C00068BAF4 /* SceneDelegate.swift */; };
 		4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E723A760C00068BAF4 /* ViewController.swift */; };
 		4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769E923A760C00068BAF4 /* Main.storyboard */; };
 		4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769EC23A760C20068BAF4 /* Assets.xcassets */; };
 		4C6769F023A760C20068BAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769EE23A760C20068BAF4 /* LaunchScreen.storyboard */; };
 		4C6769FB23A760C30068BAF4 /* RxSwift_LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769FA23A760C30068BAF4 /* RxSwift_LearningTests.swift */; };
 		4C676A0623A760C30068BAF4 /* RxSwift_LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A0523A760C30068BAF4 /* RxSwift_LearningUITests.swift */; };
+		4C676A1523A7673E0068BAF4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A1423A7673E0068BAF4 /* Common.swift */; };
+		4C676A1723A767730068BAF4 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C676A1623A767730068BAF4 /* Image.storyboard */; };
+		4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A1823A767BE0068BAF4 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		2B41B7D4F03CCC21FE177CE0 /* Pods-RxSwift-Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Learning.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Learning/Pods-RxSwift-Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		4C6769E023A760C00068BAF4 /* RxSwift-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6769E323A760C00068BAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C6769E523A760C00068BAF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4C6769E723A760C00068BAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C6769EA23A760C00068BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C6769EC23A760C20068BAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +53,9 @@
 		4C676A0123A760C30068BAF4 /* RxSwift-LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwift-LearningUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C676A0523A760C30068BAF4 /* RxSwift_LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_LearningUITests.swift; sourceTree = "<group>"; };
 		4C676A0723A760C30068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C676A1423A7673E0068BAF4 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		4C676A1623A767730068BAF4 /* Image.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
+		4C676A1823A767BE0068BAF4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxSwift-Learning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,13 +118,14 @@
 		4C6769E223A760C00068BAF4 /* RxSwift-Learning */ = {
 			isa = PBXGroup;
 			children = (
+				4C676A1323A766C80068BAF4 /* Image */,
 				4C6769E323A760C00068BAF4 /* AppDelegate.swift */,
-				4C6769E523A760C00068BAF4 /* SceneDelegate.swift */,
 				4C6769E723A760C00068BAF4 /* ViewController.swift */,
 				4C6769E923A760C00068BAF4 /* Main.storyboard */,
 				4C6769EC23A760C20068BAF4 /* Assets.xcassets */,
 				4C6769EE23A760C20068BAF4 /* LaunchScreen.storyboard */,
 				4C6769F123A760C20068BAF4 /* Info.plist */,
+				4C676A1423A7673E0068BAF4 /* Common.swift */,
 			);
 			path = "RxSwift-Learning";
 			sourceTree = "<group>";
@@ -143,13 +148,21 @@
 			path = "RxSwift-LearningUITests";
 			sourceTree = "<group>";
 		};
+		4C676A1323A766C80068BAF4 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4C676A1623A767730068BAF4 /* Image.storyboard */,
+				4C676A1823A767BE0068BAF4 /* ImageViewController.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		FE8A5688C4250B1F2D846BE9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2B41B7D4F03CCC21FE177CE0 /* Pods-RxSwift-Learning.debug.xcconfig */,
 				0A140D334E0DDA1A525F24EF /* Pods-RxSwift-Learning.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -260,6 +273,7 @@
 			files = (
 				4C6769F023A760C20068BAF4 /* LaunchScreen.storyboard in Resources */,
 				4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */,
+				4C676A1723A767730068BAF4 /* Image.storyboard in Resources */,
 				4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,8 +325,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */,
+				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,
+				4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */,
 				4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */,
-				4C6769E623A760C00068BAF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R42JW2NS5S;
 				INFOPLIST_FILE = "RxSwift-Learning/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kodeawon.RxSwift-Learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -508,6 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R42JW2NS5S;
 				INFOPLIST_FILE = "RxSwift-Learning/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,7 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kodeawon.RxSwift-Learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

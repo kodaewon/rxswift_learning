@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cUu-cs-4xj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image View Controller-->
+        <scene sceneID="bDS-mb-pjE">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cUu-cs-4xj" customClass="ImageViewController" customModule="RxSwift_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OpB-kS-Ox9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-mC-d3Q">
+                                <rect key="frame" x="15" y="59" width="384" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bCq-mC-d3Q" secondAttribute="height" multiplier="3:2" id="7TE-9k-jlC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-cF-vM9">
+                                <rect key="frame" x="15" y="325" width="52" height="30"/>
+                                <state key="normal" title="불러오기"/>
+                                <connections>
+                                    <action selector="loadDidTap:" destination="cUu-cs-4xj" eventType="touchUpInside" id="9SJ-yz-GSi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dka-QF-e2M">
+                                <rect key="frame" x="77" y="325" width="52" height="30"/>
+                                <state key="normal" title="취소하기"/>
+                                <connections>
+                                    <action selector="cancelDidTap:" destination="cUu-cs-4xj" eventType="touchUpInside" id="Qls-QX-aN8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZT-SK-5pN">
+                                <rect key="frame" x="357" y="329.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ARY-tI-fCe" firstAttribute="trailing" secondItem="XZT-SK-5pN" secondAttribute="trailing" constant="15" id="5Nd-ti-1Cz"/>
+                            <constraint firstItem="ARY-tI-fCe" firstAttribute="trailing" secondItem="bCq-mC-d3Q" secondAttribute="trailing" constant="15" id="HLT-Xl-KId"/>
+                            <constraint firstItem="Dka-QF-e2M" firstAttribute="leading" secondItem="cJ3-cF-vM9" secondAttribute="trailing" constant="10" id="Oec-EV-vVk"/>
+                            <constraint firstItem="Dka-QF-e2M" firstAttribute="centerY" secondItem="cJ3-cF-vM9" secondAttribute="centerY" id="SEb-2r-Vdv"/>
+                            <constraint firstItem="bCq-mC-d3Q" firstAttribute="top" secondItem="ARY-tI-fCe" secondAttribute="top" constant="15" id="WdB-ii-euN"/>
+                            <constraint firstItem="XZT-SK-5pN" firstAttribute="centerY" secondItem="cJ3-cF-vM9" secondAttribute="centerY" id="eOs-ML-Vms"/>
+                            <constraint firstItem="bCq-mC-d3Q" firstAttribute="leading" secondItem="ARY-tI-fCe" secondAttribute="leading" constant="15" id="nnd-bq-we5"/>
+                            <constraint firstItem="cJ3-cF-vM9" firstAttribute="leading" secondItem="ARY-tI-fCe" secondAttribute="leading" constant="15" id="wa1-Ts-MWo"/>
+                            <constraint firstItem="cJ3-cF-vM9" firstAttribute="top" secondItem="bCq-mC-d3Q" secondAttribute="bottom" constant="10" id="yXU-US-edC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ARY-tI-fCe"/>
+                    </view>
+                    <connections>
+                        <outlet property="countingLabel" destination="XZT-SK-5pN" id="Pq5-UH-83K"/>
+                        <outlet property="loadImageView" destination="bCq-mC-d3Q" id="0yN-xn-reH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gB9-tS-Lgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="-250"/>
+        </scene>
+    </scenes>
+</document>
