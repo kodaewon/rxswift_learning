@@ -34,8 +34,31 @@
                         <sections>
                             <tableViewSection id="7tK-je-vY7">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="d8B-uY-aKu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="glI-FM-6Ce">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="glI-FM-6Ce" id="ucn-Z3-gXU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqK-xq-tj1">
+                                                    <rect key="frame" x="174.5" y="19.5" width="65.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NqK-xq-tj1" firstAttribute="centerX" secondItem="ucn-Z3-gXU" secondAttribute="centerX" id="1Lb-yq-tUT"/>
+                                                <constraint firstItem="NqK-xq-tj1" firstAttribute="centerY" secondItem="ucn-Z3-gXU" secondAttribute="centerY" id="PVR-TE-cP8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yJb-th-SLe" kind="show" id="THq-9V-ec5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="d8B-uY-aKu">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d8B-uY-aKu" id="Euj-nI-v8n">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -71,6 +94,16 @@
             </objects>
             <point key="canvasLocation" x="175" y="138"/>
         </scene>
+        <!--Basic-->
+        <scene sceneID="vJt-fH-5Qh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Basic" id="yJb-th-SLe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GeG-oE-mGn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2J-iD-zDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="-66"/>
+        </scene>
         <!--Image-->
         <scene sceneID="yV2-62-Pud">
             <objects>
@@ -79,7 +112,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P21-AY-zRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="-153"/>
+            <point key="canvasLocation" x="917" y="138"/>
         </scene>
     </scenes>
 </document>

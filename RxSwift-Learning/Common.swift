@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 let LARGE_IMAGE_URL = "https://picsum.photos/1024/768/?random"
 let LARGER_IMAGE_URL = "https://picsum.photos/1280/720/?random"
 let LARGEST_IMAGE_URL = "https://picsum.photos/2560/1440/?random"
+
 
 //MARK: - Image Load Request
 func syncLoadImage(from imageURL: String) -> UIImage? {
