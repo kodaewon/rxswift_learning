@@ -32,11 +32,6 @@ class ImageViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         disposeBag = DisposeBag()
-        print("viewWillDisappear")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        print("viewDidDisappear")
     }
 
     //MARK: Actions

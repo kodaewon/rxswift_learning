@@ -80,6 +80,29 @@
                                             <segue destination="f6R-gR-POc" kind="show" id="oww-LD-K2Q"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Gxr-7N-Lts">
+                                        <rect key="frame" x="0.0" y="148" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gxr-7N-Lts" id="XL3-Ai-3zl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euc-0B-SPF">
+                                                    <rect key="frame" x="186" y="19.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="euc-0B-SPF" firstAttribute="centerX" secondItem="XL3-Ai-3zl" secondAttribute="centerX" id="2vI-SY-4cl"/>
+                                                <constraint firstItem="euc-0B-SPF" firstAttribute="centerY" secondItem="XL3-Ai-3zl" secondAttribute="centerY" id="ar9-hS-P5K"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EQD-gh-Efb" kind="show" id="Use-H6-qTA"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -102,7 +125,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2J-iD-zDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="-66"/>
+            <point key="canvasLocation" x="749" y="-99"/>
         </scene>
         <!--Image-->
         <scene sceneID="yV2-62-Pud">
@@ -112,7 +135,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P21-AY-zRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="138"/>
+            <point key="canvasLocation" x="751" y="23"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="uxZ-8M-ReI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="EQD-gh-Efb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="23e-rE-gHx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mtt-ll-EKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="116"/>
         </scene>
     </scenes>
 </document>
