@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     var disposeBag = DisposeBag()
+    
+    let loginViewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,65 +29,52 @@ class LoginViewController: UIViewController {
         self.navigationItem.title = "Login"
         
         bindUI()
+        
+        bindAction()
     }
     
-    //MARK: Actions
-    @IBAction func loginDidTap(_ sender: UIButton) {
-        sender.isSelected ? print("\(#function) Login") : print("\(#function) Fill the Fields")
+    //MARK: Bind Action
+    private func bindAction() {
+        loginButton.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.loginButton.isSelected ? print("\(#function) Login") : print("\(#function) Fill the Fields")
+            })
+            .disposed(by: disposeBag)
     }
 
     //MARK: Bind UI
     private func bindUI() {
         emailTextField.rx.text.orEmpty
-            .map{ self.checkEmailValid($0) }
-            .distinctUntilChanged()
-            .subscribe(onNext: { (bool) in
-                print("\(#function) checkEmailValid = \(bool)")
-                self.emailValidView.isHidden = bool
-            }, onError: { (err) in
-                print("\(#function) err = \(err)")
-            }, onCompleted: {
-                print("\(#function) onCompleted")
-            }, onDisposed: {
-                print("\(#function) onDisposed")
-            })
+            .bind(to: loginViewModel.emailText)
             .disposed(by: disposeBag)
         
         pwTextField.rx.text.orEmpty
-            .map{ self.checkPasswordValid($0) }
-            .distinctUntilChanged()
-            .subscribe(onNext: { (bool) in
-                print("\(#function) checkPasswordValid = \(bool)")
-                self.pwValidView.isHidden = bool
-            }, onError: { (err) in
-                print("\(#function) err = \(err)")
-            }, onCompleted: {
-                print("\(#function) onCompleted")
-            }, onDisposed: {
-                print("\(#function) onDisposed")
-            })
+            .bind(to: loginViewModel.passwordText)
             .disposed(by: disposeBag)
         
-        Observable.combineLatest(
-            emailTextField.rx.text.orEmpty.map{ self.checkEmailValid($0) },
-            pwTextField.rx.text.orEmpty.map{ self.checkPasswordValid($0) },
-            resultSelector: { (s1: Bool, s2: Bool) in
-                return s1 && s2
-            })
-            .subscribe(onNext: { (bool) in
+        loginViewModel.isEmailValid
+            .bind(to: emailValidView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+        loginViewModel.isPasswrodValid
+            .bind(to: pwValidView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+//        Observable.combineLatest(
+//            loginViewModel.isEmailValid,
+//            loginViewModel.isPasswrodValid,
+//            resultSelector: { (s1: Bool, s2: Bool) in
+//                return s1 && s2
+//            })
+//            .bind(to: loginButton.rx.isSelected)
+//            .disposed(by: disposeBag)
+        
+        Observable.combineLatest(loginViewModel.isEmailValid, loginViewModel.isPasswrodValid) { $0 && $1 }
+            .asDriver(onErrorJustReturn: false)
+            .drive(onNext: { bool in
                 self.loginButton.isSelected = bool
             })
             .disposed(by: disposeBag)
-    }
-}
-
-//MARK: - Vaild
-extension LoginViewController {
-    private func checkEmailValid(_ email: String) -> Bool {
-        return email.contains("@") && email.contains(".")
-    }
-    
-    private func checkPasswordValid(_ password: String) -> Bool {
-        return password.count > 4
     }
 }

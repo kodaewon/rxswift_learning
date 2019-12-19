@@ -10,6 +10,7 @@
 		463A4056296F9214C6365BC6 /* libPods-RxSwift-Learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */; };
 		4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4317DA23AA1A30007CDEFB /* Login.storyboard */; };
 		4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */; };
+		4C498B6A23AB30AB007D8567 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C498B6923AB30AB007D8567 /* LoginViewModel.swift */; };
 		4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E323A760C00068BAF4 /* AppDelegate.swift */; };
 		4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E723A760C00068BAF4 /* ViewController.swift */; };
 		4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769E923A760C00068BAF4 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		2B41B7D4F03CCC21FE177CE0 /* Pods-RxSwift-Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Learning.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Learning/Pods-RxSwift-Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4317DA23AA1A30007CDEFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4C498B6923AB30AB007D8567 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4C6769E023A760C00068BAF4 /* RxSwift-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6769E323A760C00068BAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C6769E723A760C00068BAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				4C4317DA23AA1A30007CDEFB /* Login.storyboard */,
 				4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */,
+				4C498B6923AB30AB007D8567 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,
 				4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */,
 				4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */,
+				4C498B6A23AB30AB007D8567 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
