@@ -103,6 +103,29 @@
                                             <segue destination="EQD-gh-Efb" kind="show" id="Use-H6-qTA"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="gDr-ZK-Vhw">
+                                        <rect key="frame" x="0.0" y="208" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gDr-ZK-Vhw" id="JJo-Cp-tEK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAQ-1a-HZf">
+                                                    <rect key="frame" x="165.5" y="19.5" width="83" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yAQ-1a-HZf" firstAttribute="centerY" secondItem="JJo-Cp-tEK" secondAttribute="centerY" id="OJ6-eW-W97"/>
+                                                <constraint firstItem="yAQ-1a-HZf" firstAttribute="centerX" secondItem="JJo-Cp-tEK" secondAttribute="centerX" id="Zs6-Bn-Iyu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="uGm-Ca-a1J" kind="show" id="H8d-bZ-wJt"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -146,6 +169,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtt-ll-EKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749" y="116"/>
+        </scene>
+        <!--Combining-->
+        <scene sceneID="Q7n-JD-vwt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Combining" id="uGm-Ca-a1J" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2W4-Ux-AIf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYI-J1-So7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="181"/>
         </scene>
     </scenes>
 </document>

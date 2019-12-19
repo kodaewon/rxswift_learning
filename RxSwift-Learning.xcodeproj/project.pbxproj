@@ -11,6 +11,8 @@
 		4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4317DA23AA1A30007CDEFB /* Login.storyboard */; };
 		4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */; };
 		4C498B6A23AB30AB007D8567 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C498B6923AB30AB007D8567 /* LoginViewModel.swift */; };
+		4C498B6D23AB5CB8007D8567 /* Combining.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C498B6C23AB5CB8007D8567 /* Combining.storyboard */; };
+		4C498B6F23AB5CCA007D8567 /* CombiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C498B6E23AB5CCA007D8567 /* CombiningViewController.swift */; };
 		4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E323A760C00068BAF4 /* AppDelegate.swift */; };
 		4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769E723A760C00068BAF4 /* ViewController.swift */; };
 		4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769E923A760C00068BAF4 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		4C4317DA23AA1A30007CDEFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C498B6923AB30AB007D8567 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4C498B6C23AB5CB8007D8567 /* Combining.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combining.storyboard; sourceTree = "<group>"; };
+		4C498B6E23AB5CCA007D8567 /* CombiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningViewController.swift; sourceTree = "<group>"; };
 		4C6769E023A760C00068BAF4 /* RxSwift-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6769E323A760C00068BAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C6769E723A760C00068BAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		4C498B6B23AB5C85007D8567 /* Combining */ = {
+			isa = PBXGroup;
+			children = (
+				4C498B6C23AB5CB8007D8567 /* Combining.storyboard */,
+				4C498B6E23AB5CCA007D8567 /* CombiningViewController.swift */,
+			);
+			path = Combining;
+			sourceTree = "<group>";
+		};
 		4C6769D723A760C00068BAF4 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 		4C6769E223A760C00068BAF4 /* RxSwift-Learning */ = {
 			isa = PBXGroup;
 			children = (
+				4C498B6B23AB5C85007D8567 /* Combining */,
 				4C4317D923AA1A22007CDEFB /* Login */,
 				4C7EBF2E23A876AA00FC4823 /* Basic */,
 				4C676A1323A766C80068BAF4 /* Image */,
@@ -306,6 +320,7 @@
 				4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */,
 				4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */,
 				4C7EBF3023A8773500FC4823 /* Basic.storyboard in Resources */,
+				4C498B6D23AB5CB8007D8567 /* Combining.storyboard in Resources */,
 				4C676A1723A767730068BAF4 /* Image.storyboard in Resources */,
 				4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */,
 			);
@@ -362,6 +377,7 @@
 				4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */,
 				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,
 				4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */,
+				4C498B6F23AB5CCA007D8567 /* CombiningViewController.swift in Sources */,
 				4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */,
 				4C498B6A23AB30AB007D8567 /* LoginViewModel.swift in Sources */,
 			);
