@@ -28,6 +28,18 @@ extension CombiningViewController {
         switch indexPath.row {
         case 0:
             rxswiftCombining()
+        case 1:
+            rxswiftConCat()
+        case 2:
+            rxswiftMerge()
+        case 3:
+            rxswiftStartWith()
+        case 4:
+            rxswiftSwitchLatest()
+        case 5:
+            rxswiftWithLatestFrom()
+        case 6:
+            rxswiftZip()
         default:
             break
         }
@@ -74,6 +86,125 @@ extension CombiningViewController {
                 print("combineLatest = \(value)")
             })
             .disposed(by: disposeBag)
+    }
+    
+    func rxswiftConCat() {
+        let observableFromNumbers = Observable<String>.from(["1", "2", "3"])
         
+        observableFromNumbers
+            .subscribe(onNext: { value in
+                print("observableFromNumbers = \(value)")
+            })
+            .disposed(by: disposeBag)
+        
+        let observableFromAlphabet = Observable<String>.from(["a", "b"])
+        
+        observableFromAlphabet
+            .subscribe(onNext: { value in
+                print("observableFromAlphabet = \(value)")
+            })
+            .disposed(by: disposeBag)
+        
+        Observable.concat([observableFromNumbers, observableFromAlphabet])
+            .subscribe(onNext: { value in
+                print("Observable.concat = \(value)")
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func rxswiftMerge() {
+        let observableOfNumbers = Observable<String>.of("1", "2")
+        
+        let observableOfAlphabet = Observable<String>.of("a", "b", "c")
+        
+        Observable.of(observableOfNumbers, observableOfAlphabet)
+            .merge()
+            .subscribe(onNext: { value in
+                print("Observable merge = \(value)")
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func rxswiftStartWith() {
+        let observableOfNumbers = Observable<String>.of("2", "3")
+        
+        observableOfNumbers.startWith("1")
+            .subscribe(onNext: { value in
+                print("startWith = \(value)")
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func rxswiftSwitchLatest() {
+        let observableOfNumbers = Observable<String>.of("1", "2", "3")
+        
+        observableOfNumbers
+            .subscribe(onNext: { value in
+                print("observableOfNumbers = \(value)")
+            })
+            .disposed(by: disposeBag)
+        
+        let observableOfAlphabet = Observable<String>.of("a", "b")
+        
+        observableOfAlphabet
+                   .subscribe(onNext: { value in
+                       print("observableOfAlphabet = \(value)")
+                   })
+                   .disposed(by: disposeBag)
+        
+        Observable.of(observableOfNumbers, observableOfAlphabet)
+            .switchLatest()
+            .subscribe(onNext: { value in
+                print("switchLatest = \(value)")
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func rxswiftWithLatestFrom() {
+        let observableOfNumbers = Observable<String>.of("1", "2", "3")
+        
+        observableOfNumbers
+            .subscribe(onNext: { value in
+                print("observableOfNumbers = \(value)")
+            })
+            .disposed(by: disposeBag)
+        
+        let observableOfAlphabet = Observable<String>.of("a", "b")
+        
+        observableOfAlphabet
+                   .subscribe(onNext: { value in
+                       print("observableOfAlphabet = \(value)")
+                   })
+                   .disposed(by: disposeBag)
+        
+        observableOfNumbers.withLatestFrom(observableOfAlphabet)
+            .subscribe(onNext: { value in
+                print("withLatestFrom = \(value)")
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func rxswiftZip() {
+        let observableOfNumbers = Observable<String>.of("1", "2", "3")
+        
+        observableOfNumbers
+            .subscribe(onNext: { value in
+                print("observableOfNumbers = \(value)")
+            })
+            .disposed(by: disposeBag)
+        
+        let observableOfAlphabet = Observable<String>.of("a", "b")
+        
+        observableOfAlphabet
+                   .subscribe(onNext: { value in
+                       print("observableOfAlphabet = \(value)")
+                   })
+                   .disposed(by: disposeBag)
+        
+        Observable.zip(observableOfNumbers, observableOfAlphabet) { $0 + $1 }
+            .subscribe(onNext: { value in
+                print("zip = \(value)")
+            })
+            .disposed(by: disposeBag)
     }
 }
