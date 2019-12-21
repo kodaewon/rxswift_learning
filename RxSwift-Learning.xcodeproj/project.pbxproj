@@ -25,6 +25,8 @@
 		4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A1823A767BE0068BAF4 /* ImageViewController.swift */; };
 		4C7EBF3023A8773500FC4823 /* Basic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7EBF2F23A8773500FC4823 /* Basic.storyboard */; };
 		4C7EBF3223A8773E00FC4823 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7EBF3123A8773E00FC4823 /* BasicViewController.swift */; };
+		4C85684223AE5DC400A25B95 /* Conditional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C85684123AE5DC400A25B95 /* Conditional.storyboard */; };
+		4C85684423AE5DCE00A25B95 /* ConditionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85684323AE5DCE00A25B95 /* ConditionalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		4C676A1823A767BE0068BAF4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		4C7EBF2F23A8773500FC4823 /* Basic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Basic.storyboard; sourceTree = "<group>"; };
 		4C7EBF3123A8773E00FC4823 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		4C85684123AE5DC400A25B95 /* Conditional.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conditional.storyboard; sourceTree = "<group>"; };
+		4C85684323AE5DCE00A25B95 /* ConditionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewController.swift; sourceTree = "<group>"; };
 		52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxSwift-Learning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,7 @@
 		4C6769E223A760C00068BAF4 /* RxSwift-Learning */ = {
 			isa = PBXGroup;
 			children = (
+				4C85684023AE5DAC00A25B95 /* Conditional */,
 				4C498B6B23AB5C85007D8567 /* Combining */,
 				4C4317D923AA1A22007CDEFB /* Login */,
 				4C7EBF2E23A876AA00FC4823 /* Basic */,
@@ -200,6 +205,15 @@
 				4C7EBF3123A8773E00FC4823 /* BasicViewController.swift */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		4C85684023AE5DAC00A25B95 /* Conditional */ = {
+			isa = PBXGroup;
+			children = (
+				4C85684123AE5DC400A25B95 /* Conditional.storyboard */,
+				4C85684323AE5DCE00A25B95 /* ConditionalViewController.swift */,
+			);
+			path = Conditional;
 			sourceTree = "<group>";
 		};
 		FE8A5688C4250B1F2D846BE9 /* Pods */ = {
@@ -317,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6769F023A760C20068BAF4 /* LaunchScreen.storyboard in Resources */,
+				4C85684223AE5DC400A25B95 /* Conditional.storyboard in Resources */,
 				4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */,
 				4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */,
 				4C7EBF3023A8773500FC4823 /* Basic.storyboard in Resources */,
@@ -373,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */,
+				4C85684423AE5DCE00A25B95 /* ConditionalViewController.swift in Sources */,
 				4C7EBF3223A8773E00FC4823 /* BasicViewController.swift in Sources */,
 				4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */,
 				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,

@@ -187,19 +187,19 @@ extension CombiningViewController {
     func rxswiftZip() {
         let observableOfNumbers = Observable<String>.of("1", "2", "3")
         
-        observableOfNumbers
-            .subscribe(onNext: { value in
-                print("observableOfNumbers = \(value)")
-            })
-            .disposed(by: disposeBag)
+//        observableOfNumbers
+//            .subscribe(onNext: { value in
+//                print("observableOfNumbers = \(value)")
+//            })
+//            .disposed(by: disposeBag)
         
         let observableOfAlphabet = Observable<String>.of("a", "b")
-        
-        observableOfAlphabet
-                   .subscribe(onNext: { value in
-                       print("observableOfAlphabet = \(value)")
-                   })
-                   .disposed(by: disposeBag)
+
+//        observableOfAlphabet
+//                   .subscribe(onNext: { value in
+//                       print("observableOfAlphabet = \(value)")
+//                   })
+//                   .disposed(by: disposeBag)
         
         Observable.zip(observableOfNumbers, observableOfAlphabet) { $0 + $1 }
             .subscribe(onNext: { value in
