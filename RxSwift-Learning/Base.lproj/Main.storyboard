@@ -149,6 +149,29 @@
                                             <segue destination="JkY-4T-nrJ" kind="show" id="tMu-Hy-dCQ"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="6CQ-eW-vCx">
+                                        <rect key="frame" x="0.0" y="328" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6CQ-eW-vCx" id="AOQ-Mc-Hxn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filtering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK4-jS-ZfT">
+                                                    <rect key="frame" x="176.5" y="19.5" width="61.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZK4-jS-ZfT" firstAttribute="centerY" secondItem="AOQ-Mc-Hxn" secondAttribute="centerY" id="zGM-Xd-aFs"/>
+                                                <constraint firstItem="ZK4-jS-ZfT" firstAttribute="centerX" secondItem="AOQ-Mc-Hxn" secondAttribute="centerX" id="zzO-rJ-Jo2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9Dj-9h-wwZ" kind="show" id="b8R-Ks-2KK"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -212,6 +235,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOe-aX-MC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="775" y="100"/>
+        </scene>
+        <!--Filtering-->
+        <scene sceneID="JhN-fT-P6K">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Filtering" id="9Dj-9h-wwZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tJ8-5f-4lG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzO-ke-bqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="138"/>
         </scene>
     </scenes>
 </document>
