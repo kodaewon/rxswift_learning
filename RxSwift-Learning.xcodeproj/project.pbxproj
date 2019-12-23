@@ -10,6 +10,10 @@
 		463A4056296F9214C6365BC6 /* libPods-RxSwift-Learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */; };
 		4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4317DA23AA1A30007CDEFB /* Login.storyboard */; };
 		4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */; };
+		4C45E37A23B0962A00A125E7 /* Mathematical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45E37923B0962A00A125E7 /* Mathematical.storyboard */; };
+		4C45E37C23B0963300A125E7 /* MathematicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45E37B23B0963300A125E7 /* MathematicalViewController.swift */; };
+		4C45E37F23B098F300A125E7 /* Transforming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45E37E23B098F300A125E7 /* Transforming.storyboard */; };
+		4C45E38123B098FA00A125E7 /* TransformingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45E38023B098FA00A125E7 /* TransformingViewController.swift */; };
 		4C498B6A23AB30AB007D8567 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C498B6923AB30AB007D8567 /* LoginViewModel.swift */; };
 		4C498B6D23AB5CB8007D8567 /* Combining.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C498B6C23AB5CB8007D8567 /* Combining.storyboard */; };
 		4C498B6F23AB5CCA007D8567 /* CombiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C498B6E23AB5CCA007D8567 /* CombiningViewController.swift */; };
@@ -53,6 +57,10 @@
 		2B41B7D4F03CCC21FE177CE0 /* Pods-RxSwift-Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Learning.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Learning/Pods-RxSwift-Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4317DA23AA1A30007CDEFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4C45E37923B0962A00A125E7 /* Mathematical.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mathematical.storyboard; sourceTree = "<group>"; };
+		4C45E37B23B0963300A125E7 /* MathematicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathematicalViewController.swift; sourceTree = "<group>"; };
+		4C45E37E23B098F300A125E7 /* Transforming.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transforming.storyboard; sourceTree = "<group>"; };
+		4C45E38023B098FA00A125E7 /* TransformingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingViewController.swift; sourceTree = "<group>"; };
 		4C498B6923AB30AB007D8567 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4C498B6C23AB5CB8007D8567 /* Combining.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combining.storyboard; sourceTree = "<group>"; };
 		4C498B6E23AB5CCA007D8567 /* CombiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +133,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		4C45E37823B0961C00A125E7 /* Mathematical */ = {
+			isa = PBXGroup;
+			children = (
+				4C45E37923B0962A00A125E7 /* Mathematical.storyboard */,
+				4C45E37B23B0963300A125E7 /* MathematicalViewController.swift */,
+			);
+			path = Mathematical;
+			sourceTree = "<group>";
+		};
+		4C45E37D23B098E700A125E7 /* Transforming */ = {
+			isa = PBXGroup;
+			children = (
+				4C45E37E23B098F300A125E7 /* Transforming.storyboard */,
+				4C45E38023B098FA00A125E7 /* TransformingViewController.swift */,
+			);
+			path = Transforming;
+			sourceTree = "<group>";
+		};
 		4C498B6B23AB5C85007D8567 /* Combining */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +185,8 @@
 		4C6769E223A760C00068BAF4 /* RxSwift-Learning */ = {
 			isa = PBXGroup;
 			children = (
+				4C45E37D23B098E700A125E7 /* Transforming */,
+				4C45E37823B0961C00A125E7 /* Mathematical */,
 				4C85684523AE801000A25B95 /* Filtering */,
 				4C85684023AE5DAC00A25B95 /* Conditional */,
 				4C498B6B23AB5C85007D8567 /* Combining */,
@@ -344,10 +372,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C45E37A23B0962A00A125E7 /* Mathematical.storyboard in Resources */,
 				4C6769F023A760C20068BAF4 /* LaunchScreen.storyboard in Resources */,
 				4C85684223AE5DC400A25B95 /* Conditional.storyboard in Resources */,
 				4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */,
 				4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */,
+				4C45E37F23B098F300A125E7 /* Transforming.storyboard in Resources */,
 				4C7EBF3023A8773500FC4823 /* Basic.storyboard in Resources */,
 				4C498B6D23AB5CB8007D8567 /* Combining.storyboard in Resources */,
 				4C85684723AE802100A25B95 /* Filtering.storyboard in Resources */,
@@ -405,6 +435,8 @@
 				4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */,
 				4C85684423AE5DCE00A25B95 /* ConditionalViewController.swift in Sources */,
 				4C7EBF3223A8773E00FC4823 /* BasicViewController.swift in Sources */,
+				4C45E37C23B0963300A125E7 /* MathematicalViewController.swift in Sources */,
+				4C45E38123B098FA00A125E7 /* TransformingViewController.swift in Sources */,
 				4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */,
 				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,
 				4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */,

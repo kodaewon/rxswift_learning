@@ -172,6 +172,52 @@
                                             <segue destination="9Dj-9h-wwZ" kind="show" id="b8R-Ks-2KK"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="P3o-OQ-cHO">
+                                        <rect key="frame" x="0.0" y="388" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P3o-OQ-cHO" id="wMe-x5-Jzv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mathematical" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-Pv-2hD">
+                                                    <rect key="frame" x="155.5" y="19.5" width="103.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rq5-Pv-2hD" firstAttribute="centerY" secondItem="wMe-x5-Jzv" secondAttribute="centerY" id="Mmx-rF-mWN"/>
+                                                <constraint firstItem="rq5-Pv-2hD" firstAttribute="centerX" secondItem="wMe-x5-Jzv" secondAttribute="centerX" id="nFL-j5-0Tg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OVo-XL-m87" kind="show" id="7WR-c7-Ug5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="aOp-hP-jrS">
+                                        <rect key="frame" x="0.0" y="448" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aOp-hP-jrS" id="fTB-Ss-TgD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transforming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vos-e7-89q">
+                                                    <rect key="frame" x="156.5" y="19.5" width="101.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vos-e7-89q" firstAttribute="centerX" secondItem="fTB-Ss-TgD" secondAttribute="centerX" id="fEW-Jh-uQy"/>
+                                                <constraint firstItem="vos-e7-89q" firstAttribute="centerY" secondItem="fTB-Ss-TgD" secondAttribute="centerY" id="lQl-hQ-i8r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="bBm-jV-fUS" kind="show" id="RwA-8X-f0N"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -245,6 +291,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzO-ke-bqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760" y="138"/>
+        </scene>
+        <!--Mathematical-->
+        <scene sceneID="rZ3-xa-6Du">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mathematical" id="OVo-XL-m87" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="550-mm-z8s"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZV-WT-jSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="185"/>
+        </scene>
+        <!--Transforming-->
+        <scene sceneID="jwb-0D-yir">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transforming" id="bBm-jV-fUS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e7q-Nz-Vue"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAC-yQ-cGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="226"/>
         </scene>
     </scenes>
 </document>
