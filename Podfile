@@ -5,5 +5,6 @@ target 'RxSwift-Learning' do
 
 	pod 'RxSwift'
 	pod 'RxCocoa'
+  pod 'RxViewController'
 
 end

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		463A4056296F9214C6365BC6 /* libPods-RxSwift-Learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */; };
+		4C3DEB0B23B1BF4100AEDC67 /* BearFried.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DEB0A23B1BF4100AEDC67 /* BearFried.storyboard */; };
+		4C3DEB0D23B1BF4F00AEDC67 /* BearFriedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB0C23B1BF4F00AEDC67 /* BearFriedViewController.swift */; };
+		4C3DEB1023B1BFE600AEDC67 /* BearFriedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB0F23B1BFE600AEDC67 /* BearFriedViewModel.swift */; };
+		4C3DEB1223B1BFFE00AEDC67 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1123B1BFFE00AEDC67 /* MenuModel.swift */; };
+		4C3DEB1523B1C80500AEDC67 /* BearFriedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1423B1C80500AEDC67 /* BearFriedTableViewCell.swift */; };
+		4C3DEB1823B1CA6600AEDC67 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1723B1CA6600AEDC67 /* APIService.swift */; };
+		4C3DEB1A23B1DCE600AEDC67 /* MenuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1923B1DCE600AEDC67 /* MenuStore.swift */; };
 		4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4317DA23AA1A30007CDEFB /* Login.storyboard */; };
 		4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */; };
 		4C45E37A23B0962A00A125E7 /* Mathematical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45E37923B0962A00A125E7 /* Mathematical.storyboard */; };
@@ -55,6 +62,13 @@
 /* Begin PBXFileReference section */
 		0A140D334E0DDA1A525F24EF /* Pods-RxSwift-Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Learning.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Learning/Pods-RxSwift-Learning.release.xcconfig"; sourceTree = "<group>"; };
 		2B41B7D4F03CCC21FE177CE0 /* Pods-RxSwift-Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Learning.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Learning/Pods-RxSwift-Learning.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3DEB0A23B1BF4100AEDC67 /* BearFried.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BearFried.storyboard; sourceTree = "<group>"; };
+		4C3DEB0C23B1BF4F00AEDC67 /* BearFriedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearFriedViewController.swift; sourceTree = "<group>"; };
+		4C3DEB0F23B1BFE600AEDC67 /* BearFriedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearFriedViewModel.swift; sourceTree = "<group>"; };
+		4C3DEB1123B1BFFE00AEDC67 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		4C3DEB1423B1C80500AEDC67 /* BearFriedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearFriedTableViewCell.swift; sourceTree = "<group>"; };
+		4C3DEB1723B1CA6600AEDC67 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4C3DEB1923B1DCE600AEDC67 /* MenuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStore.swift; sourceTree = "<group>"; };
 		4C4317DA23AA1A30007CDEFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C45E37923B0962A00A125E7 /* Mathematical.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mathematical.storyboard; sourceTree = "<group>"; };
@@ -123,6 +137,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C3DEB0923B1BF0500AEDC67 /* MVVM-BearFried */ = {
+			isa = PBXGroup;
+			children = (
+				4C3DEB1623B1CA3900AEDC67 /* Network */,
+				4C3DEB1323B1C7F500AEDC67 /* Cell */,
+				4C3DEB0E23B1BFD800AEDC67 /* Model */,
+				4C3DEB0A23B1BF4100AEDC67 /* BearFried.storyboard */,
+				4C3DEB0C23B1BF4F00AEDC67 /* BearFriedViewController.swift */,
+			);
+			path = "MVVM-BearFried";
+			sourceTree = "<group>";
+		};
+		4C3DEB0E23B1BFD800AEDC67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C3DEB0F23B1BFE600AEDC67 /* BearFriedViewModel.swift */,
+				4C3DEB1123B1BFFE00AEDC67 /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C3DEB1323B1C7F500AEDC67 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4C3DEB1423B1C80500AEDC67 /* BearFriedTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4C3DEB1623B1CA3900AEDC67 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4C3DEB1923B1DCE600AEDC67 /* MenuStore.swift */,
+				4C3DEB1723B1CA6600AEDC67 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		4C4317D923AA1A22007CDEFB /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +237,7 @@
 		4C6769E223A760C00068BAF4 /* RxSwift-Learning */ = {
 			isa = PBXGroup;
 			children = (
+				4C3DEB0923B1BF0500AEDC67 /* MVVM-BearFried */,
 				4C45E37D23B098E700A125E7 /* Transforming */,
 				4C45E37823B0961C00A125E7 /* Mathematical */,
 				4C85684523AE801000A25B95 /* Filtering */,
@@ -375,6 +428,7 @@
 				4C45E37A23B0962A00A125E7 /* Mathematical.storyboard in Resources */,
 				4C6769F023A760C20068BAF4 /* LaunchScreen.storyboard in Resources */,
 				4C85684223AE5DC400A25B95 /* Conditional.storyboard in Resources */,
+				4C3DEB0B23B1BF4100AEDC67 /* BearFried.storyboard in Resources */,
 				4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */,
 				4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */,
 				4C45E37F23B098F300A125E7 /* Transforming.storyboard in Resources */,
@@ -432,17 +486,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3DEB1823B1CA6600AEDC67 /* APIService.swift in Sources */,
+				4C3DEB0D23B1BF4F00AEDC67 /* BearFriedViewController.swift in Sources */,
 				4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */,
+				4C3DEB1223B1BFFE00AEDC67 /* MenuModel.swift in Sources */,
 				4C85684423AE5DCE00A25B95 /* ConditionalViewController.swift in Sources */,
 				4C7EBF3223A8773E00FC4823 /* BasicViewController.swift in Sources */,
 				4C45E37C23B0963300A125E7 /* MathematicalViewController.swift in Sources */,
 				4C45E38123B098FA00A125E7 /* TransformingViewController.swift in Sources */,
 				4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */,
 				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,
+				4C3DEB1A23B1DCE600AEDC67 /* MenuStore.swift in Sources */,
 				4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */,
 				4C498B6F23AB5CCA007D8567 /* CombiningViewController.swift in Sources */,
 				4C85684923AE802B00A25B95 /* FilteringViewController.swift in Sources */,
+				4C3DEB1023B1BFE600AEDC67 /* BearFriedViewModel.swift in Sources */,
 				4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */,
+				4C3DEB1523B1C80500AEDC67 /* BearFriedTableViewCell.swift in Sources */,
 				4C498B6A23AB30AB007D8567 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -218,6 +218,29 @@
                                             <segue destination="bBm-jV-fUS" kind="show" id="RwA-8X-f0N"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="IQg-cm-Dw5">
+                                        <rect key="frame" x="0.0" y="508" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IQg-cm-Dw5" id="A7J-iV-7XZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVVM-BearFried" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-Ho-WOI">
+                                                    <rect key="frame" x="141" y="19.5" width="132.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PIg-Ho-WOI" firstAttribute="centerX" secondItem="A7J-iV-7XZ" secondAttribute="centerX" id="Cbn-ec-BFW"/>
+                                                <constraint firstItem="PIg-Ho-WOI" firstAttribute="centerY" secondItem="A7J-iV-7XZ" secondAttribute="centerY" id="ZdX-nQ-3Bb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ump-fX-hCW" kind="show" id="owc-9w-5vh"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -311,6 +334,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAC-yQ-cGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="786" y="226"/>
+        </scene>
+        <!--BearFried-->
+        <scene sceneID="E7k-jZ-6lx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BearFried" id="ump-fX-hCW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1jz-FZ-LHy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOg-OV-wpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="269"/>
         </scene>
     </scenes>
 </document>
