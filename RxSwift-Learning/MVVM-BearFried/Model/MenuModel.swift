@@ -8,24 +8,19 @@
 
 import Foundation
 
-struct MenuItem: Decodable {
-    var name: String
-    var price: Int
-}
-
-extension MenuItem: Equatable {
-    static func == (lhs: MenuItem, rhs: MenuItem) -> Bool {
-        return lhs.name == rhs.name && lhs.price == rhs.price
-    }
-}
-
-
-struct MenuModel: Decodable {
+struct MenuModel: Codable {
     var name: String
     var count: Int
     var price: Int
     
-    init(_ item: MenuItem) {
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        name = (try? values.decode(String.self, forKey: .name)) ?? ""
+        price = (try? values.decode(Int.self, forKey: .price)) ?? 0
+        count = (try? values.decode(Int.self, forKey: .count)) ?? 0
+    }
+    
+    init(_ item: MenuModel) {
         name = item.name
         price = item.price
         count = 0

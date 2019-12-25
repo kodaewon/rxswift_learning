@@ -11,13 +11,13 @@ import Foundation
 import RxSwift
 
 protocol MenuFetchable {
-    func fetchMenus() -> Observable<[MenuItem]>
+    func fetchMenus() -> Observable<[MenuModel]>
 }
 
 class MenuStore: MenuFetchable {
-    func fetchMenus() -> Observable<[MenuItem]> {
-        struct Response: Decodable {
-            let menus: [MenuItem]
+    func fetchMenus() -> Observable<[MenuModel]> {
+        struct Response: Codable {
+            let menus: [MenuModel]
         }
 
         return APIService.fetchAllMenusRx()
