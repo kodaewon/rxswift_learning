@@ -49,7 +49,6 @@ class BearFriedViewController: UIViewController {
     }
     
     func setupBindings() {
-        
         let firstLoad = rx.viewWillAppear
             .take(1)
             .map { _ in () }
@@ -62,14 +61,27 @@ class BearFriedViewController: UIViewController {
             .bind(to: viewModel.fetchMenus)
             .disposed(by: disposeBag)
         
+        /// TableView에 데이터 반영
         viewModel.allMenus
             .bind(to: tableView.rx.items(cellIdentifier: BearFriedTableViewCell.identifier,
                                          cellType: BearFriedTableViewCell.self))
             { _, item, cell in
-                cell.nameLabel.text = "1"
+                cell.onData.onNext(item)
+                cell.onIncrease
+                    .map { (item, $0) }
+                    .bind(to: self.viewModel.increaseMenuCount)
+                    .disposed(by: cell.disposeBag)
             }
             .disposed(by: disposeBag)
-
+        
+        viewModel.actived
+            .subscribe(onNext: { activied in
+                if activied {
+                    self.tableView.refreshControl?.endRefreshing()
+                }
+            })
+            .disposed(by: disposeBag)
+        
         viewModel.totalCountText
             .bind(to: itemsCountLabel.rx.text)
             .disposed(by: disposeBag)
@@ -77,5 +89,38 @@ class BearFriedViewController: UIViewController {
         viewModel.totalPriceText
             .bind(to: totalPriceLabel.rx.text)
             .disposed(by: disposeBag)
+        
+        clearButton.rx.tap
+            .asControlEvent()
+            .bind(to: self.viewModel.clearMenus)
+            .disposed(by: disposeBag)
+        
+        orderButton.rx.tap
+            .asControlEvent()
+            .bind(to: self.viewModel.orderMenus)
+            .disposed(by: disposeBag)
+    }
+}
+
+//MARK: - Int Extesion
+extension Int {
+    enum CurrencyStyle {
+        case kr, en
+        
+        var value: String {
+            switch self {
+            case .kr:
+                return "ko_KR"
+            case .en:
+                return "en"
+            }
+        }
+    }
+    
+    func currencyString(_ style: CurrencyStyle) -> String {
+        let numberFormat = NumberFormatter()
+        numberFormat.numberStyle = .currency
+        numberFormat.locale = Locale(identifier: style.value)
+        return numberFormat.string(from: NSNumber(value: self)) ?? "0"
     }
 }

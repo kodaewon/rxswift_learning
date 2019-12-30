@@ -39,11 +39,17 @@
                                                             <rect key="frame" x="16" y="7" width="30" height="42"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                             <state key="normal" title="+"/>
+                                                            <connections>
+                                                                <action selector="onIncreaseCount" destination="1xx-gM-0ix" eventType="touchUpInside" id="fWV-Gu-MQS"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxg-yi-qiN">
                                                             <rect key="frame" x="54" y="7" width="30" height="42"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                             <state key="normal" title="-"/>
+                                                            <connections>
+                                                                <action selector="onDecreaseCount" destination="1xx-gM-0ix" eventType="touchUpInside" id="4b8-PQ-Xqy"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iv-eE-UhR">
                                                             <rect key="frame" x="100" y="18" width="42" height="20.5"/>

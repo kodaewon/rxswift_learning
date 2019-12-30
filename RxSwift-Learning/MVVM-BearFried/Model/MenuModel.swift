@@ -10,8 +10,8 @@ import Foundation
 
 struct MenuModel: Codable {
     var name: String
-    var count: Int
     var price: Int
+    var count: Int
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -23,13 +23,17 @@ struct MenuModel: Codable {
     init(_ item: MenuModel) {
         name = item.name
         price = item.price
-        count = 0
+        count = item.count
     }
     
-    init(_ name: String, _ count: Int, _ price: Int) {
+    init(_ name: String, _ price: Int, _ count: Int) {
         self.name = name
         self.price = price
         self.count = count
+    }
+    
+    func countUpdated(_ count: Int) -> MenuModel {
+        return MenuModel(name, price, count)
     }
 }
 
