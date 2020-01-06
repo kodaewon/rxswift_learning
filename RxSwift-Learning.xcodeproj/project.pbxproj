@@ -15,6 +15,8 @@
 		4C3DEB1523B1C80500AEDC67 /* BearFriedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1423B1C80500AEDC67 /* BearFriedTableViewCell.swift */; };
 		4C3DEB1823B1CA6600AEDC67 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1723B1CA6600AEDC67 /* APIService.swift */; };
 		4C3DEB1A23B1DCE600AEDC67 /* MenuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DEB1923B1DCE600AEDC67 /* MenuStore.swift */; };
+		4C4033CD23C388120058A6AA /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4033CC23C388120058A6AA /* Subject.storyboard */; };
+		4C4033CF23C3882C0058A6AA /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4033CE23C3882C0058A6AA /* SubjectViewController.swift */; };
 		4C4317DB23AA1A30007CDEFB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4317DA23AA1A30007CDEFB /* Login.storyboard */; };
 		4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */; };
 		4C45E37A23B0962A00A125E7 /* Mathematical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45E37923B0962A00A125E7 /* Mathematical.storyboard */; };
@@ -40,6 +42,11 @@
 		4C85684423AE5DCE00A25B95 /* ConditionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85684323AE5DCE00A25B95 /* ConditionalViewController.swift */; };
 		4C85684723AE802100A25B95 /* Filtering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C85684623AE802100A25B95 /* Filtering.storyboard */; };
 		4C85684923AE802B00A25B95 /* FilteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C85684823AE802B00A25B95 /* FilteringViewController.swift */; };
+		4CA3EEB723C38BE000DD89B6 /* TikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEB623C38BE000DD89B6 /* TikiViewController.swift */; };
+		4CA3EEB923C38BED00DD89B6 /* TakaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEB823C38BED00DD89B6 /* TakaViewController.swift */; };
+		4CA3EEBB23C38D4800DD89B6 /* TikiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEBA23C38D4800DD89B6 /* TikiViewModel.swift */; };
+		4CA3EEBD23C38D8600DD89B6 /* TakaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEBC23C38D8600DD89B6 /* TakaViewModel.swift */; };
+		4CA3EEBF23C390FE00DD89B6 /* TikiTakaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEBE23C390FE00DD89B6 /* TikiTakaProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,8 @@
 		4C3DEB1423B1C80500AEDC67 /* BearFriedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearFriedTableViewCell.swift; sourceTree = "<group>"; };
 		4C3DEB1723B1CA6600AEDC67 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4C3DEB1923B1DCE600AEDC67 /* MenuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStore.swift; sourceTree = "<group>"; };
+		4C4033CC23C388120058A6AA /* Subject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subject.storyboard; sourceTree = "<group>"; };
+		4C4033CE23C3882C0058A6AA /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		4C4317DA23AA1A30007CDEFB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4C4317DC23AA1A46007CDEFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C45E37923B0962A00A125E7 /* Mathematical.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mathematical.storyboard; sourceTree = "<group>"; };
@@ -100,6 +109,11 @@
 		4C85684323AE5DCE00A25B95 /* ConditionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewController.swift; sourceTree = "<group>"; };
 		4C85684623AE802100A25B95 /* Filtering.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filtering.storyboard; sourceTree = "<group>"; };
 		4C85684823AE802B00A25B95 /* FilteringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringViewController.swift; sourceTree = "<group>"; };
+		4CA3EEB623C38BE000DD89B6 /* TikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikiViewController.swift; sourceTree = "<group>"; };
+		4CA3EEB823C38BED00DD89B6 /* TakaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakaViewController.swift; sourceTree = "<group>"; };
+		4CA3EEBA23C38D4800DD89B6 /* TikiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikiViewModel.swift; sourceTree = "<group>"; };
+		4CA3EEBC23C38D8600DD89B6 /* TakaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakaViewModel.swift; sourceTree = "<group>"; };
+		4CA3EEBE23C390FE00DD89B6 /* TikiTakaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikiTakaProtocol.swift; sourceTree = "<group>"; };
 		52198D9F698A274D828D91E3 /* libPods-RxSwift-Learning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxSwift-Learning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +189,28 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		4C4033CB23C387F70058A6AA /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				4C4033D023C38B550058A6AA /* SubViews */,
+				4C4033CC23C388120058A6AA /* Subject.storyboard */,
+				4C4033CE23C3882C0058A6AA /* SubjectViewController.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		4C4033D023C38B550058A6AA /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				4CA3EEB623C38BE000DD89B6 /* TikiViewController.swift */,
+				4CA3EEBA23C38D4800DD89B6 /* TikiViewModel.swift */,
+				4CA3EEB823C38BED00DD89B6 /* TakaViewController.swift */,
+				4CA3EEBC23C38D8600DD89B6 /* TakaViewModel.swift */,
+				4CA3EEBE23C390FE00DD89B6 /* TikiTakaProtocol.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		4C4317D923AA1A22007CDEFB /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +273,7 @@
 		4C6769E223A760C00068BAF4 /* RxSwift-Learning */ = {
 			isa = PBXGroup;
 			children = (
+				4C4033CB23C387F70058A6AA /* Subject */,
 				4C3DEB0923B1BF0500AEDC67 /* MVVM-BearFried */,
 				4C45E37D23B098E700A125E7 /* Transforming */,
 				4C45E37823B0961C00A125E7 /* Mathematical */,
@@ -436,6 +473,7 @@
 				4C498B6D23AB5CB8007D8567 /* Combining.storyboard in Resources */,
 				4C85684723AE802100A25B95 /* Filtering.storyboard in Resources */,
 				4C676A1723A767730068BAF4 /* Image.storyboard in Resources */,
+				4C4033CD23C388120058A6AA /* Subject.storyboard in Resources */,
 				4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,19 +525,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3DEB1823B1CA6600AEDC67 /* APIService.swift in Sources */,
+				4CA3EEB923C38BED00DD89B6 /* TakaViewController.swift in Sources */,
 				4C3DEB0D23B1BF4F00AEDC67 /* BearFriedViewController.swift in Sources */,
 				4C4317DD23AA1A46007CDEFB /* LoginViewController.swift in Sources */,
 				4C3DEB1223B1BFFE00AEDC67 /* MenuModel.swift in Sources */,
+				4CA3EEBF23C390FE00DD89B6 /* TikiTakaProtocol.swift in Sources */,
 				4C85684423AE5DCE00A25B95 /* ConditionalViewController.swift in Sources */,
+				4C4033CF23C3882C0058A6AA /* SubjectViewController.swift in Sources */,
+				4CA3EEBD23C38D8600DD89B6 /* TakaViewModel.swift in Sources */,
 				4C7EBF3223A8773E00FC4823 /* BasicViewController.swift in Sources */,
 				4C45E37C23B0963300A125E7 /* MathematicalViewController.swift in Sources */,
 				4C45E38123B098FA00A125E7 /* TransformingViewController.swift in Sources */,
 				4C6769E823A760C00068BAF4 /* ViewController.swift in Sources */,
 				4C676A1523A7673E0068BAF4 /* Common.swift in Sources */,
+				4CA3EEB723C38BE000DD89B6 /* TikiViewController.swift in Sources */,
 				4C3DEB1A23B1DCE600AEDC67 /* MenuStore.swift in Sources */,
 				4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */,
 				4C498B6F23AB5CCA007D8567 /* CombiningViewController.swift in Sources */,
 				4C85684923AE802B00A25B95 /* FilteringViewController.swift in Sources */,
+				4CA3EEBB23C38D4800DD89B6 /* TikiViewModel.swift in Sources */,
 				4C3DEB1023B1BFE600AEDC67 /* BearFriedViewModel.swift in Sources */,
 				4C6769E423A760C00068BAF4 /* AppDelegate.swift in Sources */,
 				4C3DEB1523B1C80500AEDC67 /* BearFriedTableViewCell.swift in Sources */,

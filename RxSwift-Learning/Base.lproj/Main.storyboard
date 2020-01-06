@@ -241,6 +241,29 @@
                                             <segue destination="ump-fX-hCW" kind="show" id="owc-9w-5vh"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="lUW-iS-bgj">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lUW-iS-bgj" id="fKN-OR-mfp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-x2-16P">
+                                                    <rect key="frame" x="178" y="19.5" width="58.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OLG-x2-16P" firstAttribute="centerY" secondItem="fKN-OR-mfp" secondAttribute="centerY" id="Zt7-KH-Sbf"/>
+                                                <constraint firstItem="OLG-x2-16P" firstAttribute="centerX" secondItem="fKN-OR-mfp" secondAttribute="centerX" id="uBA-Qe-N7b"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="abU-fw-8ND" kind="show" id="DtQ-q7-IZs"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -344,6 +367,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOg-OV-wpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="766" y="269"/>
+        </scene>
+        <!--Subject-->
+        <scene sceneID="kz6-vV-AGb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Subject" id="abU-fw-8ND" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VLy-xT-waX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ig0-3t-C0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="308"/>
         </scene>
     </scenes>
 </document>

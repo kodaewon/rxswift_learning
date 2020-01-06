@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zax-eR-FwP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subject View Controller-->
+        <scene sceneID="ea2-a7-af4">
+            <objects>
+                <viewController storyboardIdentifier="Subject" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zax-eR-FwP" customClass="SubjectViewController" customModule="RxSwift_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZPL-gt-AIV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-vB-y7V">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oW-HL-IvB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                        <connections>
+                                            <segue destination="HAs-Z6-iZH" kind="embed" identifier="tiki" id="0sD-7z-IwV"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epY-2P-0Fv">
+                                        <rect key="frame" x="0.0" y="426" width="414" height="426"/>
+                                        <connections>
+                                            <segue destination="ymT-df-q6Z" kind="embed" identifier="taka" id="xhj-V5-slO"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cb5-vB-y7V" secondAttribute="bottom" id="1OL-up-Owz"/>
+                            <constraint firstItem="cb5-vB-y7V" firstAttribute="top" secondItem="YRH-T6-rvb" secondAttribute="top" id="SA9-TM-k8v"/>
+                            <constraint firstItem="YRH-T6-rvb" firstAttribute="trailing" secondItem="cb5-vB-y7V" secondAttribute="trailing" id="bOo-Dg-H1K"/>
+                            <constraint firstItem="cb5-vB-y7V" firstAttribute="leading" secondItem="YRH-T6-rvb" secondAttribute="leading" id="kbR-Fb-ZQp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YRH-T6-rvb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3a-ii-C77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.91304347826087" y="-222.32142857142856"/>
+        </scene>
+        <!--Tiki View Controller-->
+        <scene sceneID="fNS-wH-6Iz">
+            <objects>
+                <viewController storyboardIdentifier="TikiViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HAs-Z6-iZH" customClass="TikiViewController" customModule="RxSwift_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VrG-Ae-7Ct">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7d-tf-VMh">
+                                <rect key="frame" x="302" y="8" width="96" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="O09-An-pvg"/>
+                                    <constraint firstAttribute="height" constant="40" id="eyL-N2-TyL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xr-up-zVu">
+                                <rect key="frame" x="16" y="11" width="278" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BTV-Fq-j48">
+                                <rect key="frame" x="16" y="53" width="382" height="365"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y7d-tf-VMh" firstAttribute="leading" secondItem="8xr-up-zVu" secondAttribute="trailing" constant="8" id="1f9-Pc-Ce0"/>
+                            <constraint firstAttribute="trailing" secondItem="Y7d-tf-VMh" secondAttribute="trailing" constant="16" id="5Cf-uG-waY"/>
+                            <constraint firstItem="BTV-Fq-j48" firstAttribute="leading" secondItem="VrG-Ae-7Ct" secondAttribute="leading" constant="16" id="7hd-Xq-wOf"/>
+                            <constraint firstItem="8xr-up-zVu" firstAttribute="height" secondItem="Y7d-tf-VMh" secondAttribute="height" multiplier="0.85" id="8Bu-Qr-OF5"/>
+                            <constraint firstAttribute="trailing" secondItem="BTV-Fq-j48" secondAttribute="trailing" constant="16" id="AhO-it-eHE"/>
+                            <constraint firstItem="8xr-up-zVu" firstAttribute="leading" secondItem="VrG-Ae-7Ct" secondAttribute="leading" constant="16" id="Cy4-R5-g7n"/>
+                            <constraint firstItem="BTV-Fq-j48" firstAttribute="top" secondItem="8xr-up-zVu" secondAttribute="bottom" constant="8" id="HqH-nY-g8D"/>
+                            <constraint firstItem="8xr-up-zVu" firstAttribute="centerY" secondItem="Y7d-tf-VMh" secondAttribute="centerY" id="Mqp-TM-o2U"/>
+                            <constraint firstAttribute="bottom" secondItem="BTV-Fq-j48" secondAttribute="bottom" constant="8" id="WaC-aN-0YK"/>
+                            <constraint firstItem="Y7d-tf-VMh" firstAttribute="top" secondItem="VrG-Ae-7Ct" secondAttribute="top" constant="8" id="ePv-bN-FKx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="8xr-up-zVu" id="4ta-OC-8xP"/>
+                        <outlet property="outputTextView" destination="BTV-Fq-j48" id="4Ab-Ua-ilo"/>
+                        <outlet property="sendButton" destination="Y7d-tf-VMh" id="pBj-gH-Tjh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAj-mP-3sQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="-368"/>
+        </scene>
+        <!--Taka View Controller-->
+        <scene sceneID="uQQ-ch-eR8">
+            <objects>
+                <viewController storyboardIdentifier="TakaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ymT-df-q6Z" customClass="TakaViewController" customModule="RxSwift_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5A-H8-Fjh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFR-fv-zXM">
+                                <rect key="frame" x="302" y="8" width="96" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sxu-Bo-Rmv"/>
+                                    <constraint firstAttribute="width" constant="96" id="hK9-0C-OgI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpd-ck-WRF">
+                                <rect key="frame" x="16" y="11" width="278" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RX9-xC-wkj">
+                                <rect key="frame" x="16" y="56" width="382" height="362"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lpd-ck-WRF" firstAttribute="centerY" secondItem="RFR-fv-zXM" secondAttribute="centerY" id="1PH-e1-H2U"/>
+                            <constraint firstItem="RFR-fv-zXM" firstAttribute="top" secondItem="v5A-H8-Fjh" secondAttribute="top" constant="8" id="25C-MM-DXt"/>
+                            <constraint firstItem="lpd-ck-WRF" firstAttribute="leading" secondItem="v5A-H8-Fjh" secondAttribute="leading" constant="16" id="6D1-BB-RGk"/>
+                            <constraint firstAttribute="trailing" secondItem="RFR-fv-zXM" secondAttribute="trailing" constant="16" id="7Zy-bt-Jz1"/>
+                            <constraint firstItem="RX9-xC-wkj" firstAttribute="leading" secondItem="v5A-H8-Fjh" secondAttribute="leading" constant="16" id="8NZ-od-9zL"/>
+                            <constraint firstAttribute="trailing" secondItem="RX9-xC-wkj" secondAttribute="trailing" constant="16" id="Emh-q6-Wz7"/>
+                            <constraint firstItem="lpd-ck-WRF" firstAttribute="height" secondItem="RFR-fv-zXM" secondAttribute="height" multiplier="0.85" id="ZbN-pE-40T"/>
+                            <constraint firstAttribute="bottom" secondItem="RX9-xC-wkj" secondAttribute="bottom" constant="8" id="aaD-DB-pja"/>
+                            <constraint firstItem="RFR-fv-zXM" firstAttribute="leading" secondItem="lpd-ck-WRF" secondAttribute="trailing" constant="8" id="bVP-HY-8fd"/>
+                            <constraint firstItem="RX9-xC-wkj" firstAttribute="top" secondItem="RFR-fv-zXM" secondAttribute="bottom" constant="8" id="pjb-hW-X1H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="lpd-ck-WRF" id="oWm-yt-wub"/>
+                        <outlet property="outputTextView" destination="RX9-xC-wkj" id="Iyf-fd-HKP"/>
+                        <outlet property="sendButton" destination="RFR-fv-zXM" id="5PT-yZ-c0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mK-BA-umS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="-41"/>
+        </scene>
+    </scenes>
+</document>
