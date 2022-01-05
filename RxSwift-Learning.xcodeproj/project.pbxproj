@@ -75,10 +75,6 @@
 		4C6769EC23A760C20068BAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6769EF23A760C20068BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C6769F123A760C20068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C6769FA23A760C30068BAF4 /* RxSwift_LearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_LearningTests.swift; sourceTree = "<group>"; };
-		4C6769FC23A760C30068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C676A0523A760C30068BAF4 /* RxSwift_LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_LearningUITests.swift; sourceTree = "<group>"; };
-		4C676A0723A760C30068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C676A1423A7673E0068BAF4 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		4C676A1623A767730068BAF4 /* Image.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
 		4C676A1823A767BE0068BAF4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -217,8 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				4C6769E223A760C00068BAF4 /* RxSwift-Learning */,
-				4C6769F923A760C30068BAF4 /* RxSwift-LearningTests */,
-				4C676A0423A760C30068BAF4 /* RxSwift-LearningUITests */,
 				4C6769E123A760C00068BAF4 /* Products */,
 				FE8A5688C4250B1F2D846BE9 /* Pods */,
 				2DBE3AAB9CD33199C73EE746 /* Frameworks */,
@@ -255,24 +249,6 @@
 				4C676A1423A7673E0068BAF4 /* Common.swift */,
 			);
 			path = "RxSwift-Learning";
-			sourceTree = "<group>";
-		};
-		4C6769F923A760C30068BAF4 /* RxSwift-LearningTests */ = {
-			isa = PBXGroup;
-			children = (
-				4C6769FA23A760C30068BAF4 /* RxSwift_LearningTests.swift */,
-				4C6769FC23A760C30068BAF4 /* Info.plist */,
-			);
-			path = "RxSwift-LearningTests";
-			sourceTree = "<group>";
-		};
-		4C676A0423A760C30068BAF4 /* RxSwift-LearningUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4C676A0523A760C30068BAF4 /* RxSwift_LearningUITests.swift */,
-				4C676A0723A760C30068BAF4 /* Info.plist */,
-			);
-			path = "RxSwift-LearningUITests";
 			sourceTree = "<group>";
 		};
 		4C676A1323A766C80068BAF4 /* Image */ = {
