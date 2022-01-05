@@ -7,4 +7,15 @@ target 'RxSwift-Learning' do
 	pod 'RxCocoa'
   pod 'RxViewController'
 
+
+target 'RxSwift-LearningTests' do
+     inherit! :search_paths
+     
+     # Reactive Test
+    pod 'RxSwift'
+	pod 'RxCocoa'
+  pod 'RxViewController'
+   end
 end
+
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C6769DF23A760C00068BAF4"
-               BuildableName = "RxSwift-Learning.app"
-               BlueprintName = "RxSwift-Learning"
-               ReferencedContainer = "container:RxSwift-Learning.xcodeproj">
+               BlueprintIdentifier = "E53BBEF2012E4F03B82B7E6DB1158303"
+               BuildableName = "libPods-RxSwift-LearningTests.a"
+               BlueprintName = "Pods-RxSwift-LearningTests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6AA7A372278562F200FDA0FD"
-               BuildableName = "RxSwift-LearningTests.xctest"
-               BlueprintName = "RxSwift-LearningTests"
-               ReferencedContainer = "container:RxSwift-Learning.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C6769DF23A760C00068BAF4"
-            BuildableName = "RxSwift-Learning.app"
-            BlueprintName = "RxSwift-Learning"
-            ReferencedContainer = "container:RxSwift-Learning.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -67,16 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C6769DF23A760C00068BAF4"
-            BuildableName = "RxSwift-Learning.app"
-            BlueprintName = "RxSwift-Learning"
-            ReferencedContainer = "container:RxSwift-Learning.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

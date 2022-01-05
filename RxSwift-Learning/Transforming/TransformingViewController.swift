@@ -142,14 +142,14 @@ extension TransformingViewController {
         let observableInts = Observable<Int>.of(1, 2, 3)
         
         //deprecated
-        observableInts
-            .mapWithIndex { (e, i) -> Int in
-                return i == 1 ? e * 10 : e
-            }
-            .subscribe(onNext: { value in
-                print("mapWithIndex = \(value)")
-            })
-            .disposed(by: disposeBag)
+//        observableInts
+//            .mapWithIndex { (e, i) -> Int in
+//                return i == 1 ? e * 10 : e
+//            }
+//            .subscribe(onNext: { value in
+//                print("mapWithIndex = \(value)")
+//            })
+//            .disposed(by: disposeBag)
     }
     
     func rxswiftScan() {

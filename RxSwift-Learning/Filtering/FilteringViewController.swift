@@ -103,14 +103,16 @@ extension FilteringViewController {
     
     func rxswiftIgnoreElements() {
         let observableInts = Observable<Int>.of(1, 2, 3, 4, 5, 6)
-        
-        observableInts.ignoreElements()
-            .subscribe(onCompleted: {
-                print("ignoreElements = onCompleted")
-            }, onError: { err in
-                print("ignoreElements err = \(err)")
-            })
-            .disposed(by: disposeBag)
+//        
+//        observableInts.ignoreElements()
+//            .subscribe(onCompleted: {
+//                print("ignoreElements = onCompleted")
+//            }, onError: { err in
+//                print("ignoreElements err = \(err)")
+//            })
+//            .disposed(by: disposeBag)
+//        
+//        observableInts.ignoreElements()
     }
     
     func rxswiftSample() {
