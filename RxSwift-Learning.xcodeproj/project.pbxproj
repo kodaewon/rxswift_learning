@@ -31,8 +31,6 @@
 		4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769E923A760C00068BAF4 /* Main.storyboard */; };
 		4C6769ED23A760C20068BAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769EC23A760C20068BAF4 /* Assets.xcassets */; };
 		4C6769F023A760C20068BAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6769EE23A760C20068BAF4 /* LaunchScreen.storyboard */; };
-		4C6769FB23A760C30068BAF4 /* RxSwift_LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6769FA23A760C30068BAF4 /* RxSwift_LearningTests.swift */; };
-		4C676A0623A760C30068BAF4 /* RxSwift_LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A0523A760C30068BAF4 /* RxSwift_LearningUITests.swift */; };
 		4C676A1523A7673E0068BAF4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A1423A7673E0068BAF4 /* Common.swift */; };
 		4C676A1723A767730068BAF4 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C676A1623A767730068BAF4 /* Image.storyboard */; };
 		4C676A1923A767BE0068BAF4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C676A1823A767BE0068BAF4 /* ImageViewController.swift */; };
@@ -48,23 +46,6 @@
 		4CA3EEBD23C38D8600DD89B6 /* TakaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEBC23C38D8600DD89B6 /* TakaViewModel.swift */; };
 		4CA3EEBF23C390FE00DD89B6 /* TikiTakaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3EEBE23C390FE00DD89B6 /* TikiTakaProtocol.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4C6769F723A760C30068BAF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6769D823A760C00068BAF4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C6769DF23A760C00068BAF4;
-			remoteInfo = "RxSwift-Learning";
-		};
-		4C676A0223A760C30068BAF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C6769D823A760C00068BAF4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C6769DF23A760C00068BAF4;
-			remoteInfo = "RxSwift-Learning";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A140D334E0DDA1A525F24EF /* Pods-RxSwift-Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Learning.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Learning/Pods-RxSwift-Learning.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,10 +75,8 @@
 		4C6769EC23A760C20068BAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6769EF23A760C20068BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C6769F123A760C20068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C6769F623A760C30068BAF4 /* RxSwift-LearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwift-LearningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6769FA23A760C30068BAF4 /* RxSwift_LearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_LearningTests.swift; sourceTree = "<group>"; };
 		4C6769FC23A760C30068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C676A0123A760C30068BAF4 /* RxSwift-LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwift-LearningUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C676A0523A760C30068BAF4 /* RxSwift_LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_LearningUITests.swift; sourceTree = "<group>"; };
 		4C676A0723A760C30068BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C676A1423A7673E0068BAF4 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -123,20 +102,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				463A4056296F9214C6365BC6 /* libPods-RxSwift-Learning.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C6769F323A760C30068BAF4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C6769FE23A760C30068BAF4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				4C6769E023A760C00068BAF4 /* RxSwift-Learning.app */,
-				4C6769F623A760C30068BAF4 /* RxSwift-LearningTests.xctest */,
-				4C676A0123A760C30068BAF4 /* RxSwift-LearningUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,42 +341,6 @@
 			productReference = 4C6769E023A760C00068BAF4 /* RxSwift-Learning.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C6769F523A760C30068BAF4 /* RxSwift-LearningTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C676A0D23A760C30068BAF4 /* Build configuration list for PBXNativeTarget "RxSwift-LearningTests" */;
-			buildPhases = (
-				4C6769F223A760C30068BAF4 /* Sources */,
-				4C6769F323A760C30068BAF4 /* Frameworks */,
-				4C6769F423A760C30068BAF4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C6769F823A760C30068BAF4 /* PBXTargetDependency */,
-			);
-			name = "RxSwift-LearningTests";
-			productName = "RxSwift-LearningTests";
-			productReference = 4C6769F623A760C30068BAF4 /* RxSwift-LearningTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4C676A0023A760C30068BAF4 /* RxSwift-LearningUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C676A1023A760C30068BAF4 /* Build configuration list for PBXNativeTarget "RxSwift-LearningUITests" */;
-			buildPhases = (
-				4C6769FD23A760C30068BAF4 /* Sources */,
-				4C6769FE23A760C30068BAF4 /* Frameworks */,
-				4C6769FF23A760C30068BAF4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C676A0323A760C30068BAF4 /* PBXTargetDependency */,
-			);
-			name = "RxSwift-LearningUITests";
-			productName = "RxSwift-LearningUITests";
-			productReference = 4C676A0123A760C30068BAF4 /* RxSwift-LearningUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -426,14 +353,6 @@
 				TargetAttributes = {
 					4C6769DF23A760C00068BAF4 = {
 						CreatedOnToolsVersion = 11.3;
-					};
-					4C6769F523A760C30068BAF4 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 4C6769DF23A760C00068BAF4;
-					};
-					4C676A0023A760C30068BAF4 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 4C6769DF23A760C00068BAF4;
 					};
 				};
 			};
@@ -451,8 +370,6 @@
 			projectRoot = "";
 			targets = (
 				4C6769DF23A760C00068BAF4 /* RxSwift-Learning */,
-				4C6769F523A760C30068BAF4 /* RxSwift-LearningTests */,
-				4C676A0023A760C30068BAF4 /* RxSwift-LearningUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -475,20 +392,6 @@
 				4C676A1723A767730068BAF4 /* Image.storyboard in Resources */,
 				4C4033CD23C388120058A6AA /* Subject.storyboard in Resources */,
 				4C6769EB23A760C00068BAF4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C6769F423A760C30068BAF4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C6769FF23A760C30068BAF4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,36 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C6769F223A760C30068BAF4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C6769FB23A760C30068BAF4 /* RxSwift_LearningTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C6769FD23A760C30068BAF4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C676A0623A760C30068BAF4 /* RxSwift_LearningUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4C6769F823A760C30068BAF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C6769DF23A760C00068BAF4 /* RxSwift-Learning */;
-			targetProxy = 4C6769F723A760C30068BAF4 /* PBXContainerItemProxy */;
-		};
-		4C676A0323A760C30068BAF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C6769DF23A760C00068BAF4 /* RxSwift-Learning */;
-			targetProxy = 4C676A0223A760C30068BAF4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C6769E923A760C00068BAF4 /* Main.storyboard */ = {
@@ -760,90 +634,6 @@
 			};
 			name = Release;
 		};
-		4C676A0E23A760C30068BAF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R42JW2NS5S;
-				INFOPLIST_FILE = "RxSwift-LearningTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kodeawon.RxSwift-LearningTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwift-Learning.app/RxSwift-Learning";
-			};
-			name = Debug;
-		};
-		4C676A0F23A760C30068BAF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R42JW2NS5S;
-				INFOPLIST_FILE = "RxSwift-LearningTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kodeawon.RxSwift-LearningTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwift-Learning.app/RxSwift-Learning";
-			};
-			name = Release;
-		};
-		4C676A1123A760C30068BAF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R42JW2NS5S;
-				INFOPLIST_FILE = "RxSwift-LearningUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kodeawon.RxSwift-LearningUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "RxSwift-Learning";
-			};
-			name = Debug;
-		};
-		4C676A1223A760C30068BAF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R42JW2NS5S;
-				INFOPLIST_FILE = "RxSwift-LearningUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kodeawon.RxSwift-LearningUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "RxSwift-Learning";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -861,24 +651,6 @@
 			buildConfigurations = (
 				4C676A0B23A760C30068BAF4 /* Debug */,
 				4C676A0C23A760C30068BAF4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C676A0D23A760C30068BAF4 /* Build configuration list for PBXNativeTarget "RxSwift-LearningTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C676A0E23A760C30068BAF4 /* Debug */,
-				4C676A0F23A760C30068BAF4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C676A1023A760C30068BAF4 /* Build configuration list for PBXNativeTarget "RxSwift-LearningUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C676A1123A760C30068BAF4 /* Debug */,
-				4C676A1223A760C30068BAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
