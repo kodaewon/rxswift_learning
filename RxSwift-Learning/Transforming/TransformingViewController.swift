@@ -140,7 +140,7 @@ extension TransformingViewController {
     
     func rxswiftMapWithIndex() {
         let observableInts = Observable<Int>.of(1, 2, 3)
-           
+            
         //deprecated
 //        observableInts
 //            .mapWithIndex { (e, i) -> Int in
